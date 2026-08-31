@@ -21,7 +21,7 @@ This repository contains structural logic designs and hardware block implementat
 *   **Booth Multiplier**
 *   **Array Multiplier**
 
-### 3. Approximate Arithmetic Unit for Edge AI
+### 3. Approximate Arithmetic Unit for Edge AI (currently in a private repo)
 *This design is a part of what i have created in my internship period titled  **FPGA Implementation of  Approximate Arithmetic Unit for AI inference** it includes*
 *   A research-focused design exploring hardware efficiency for AI inference.
 *   Focuses on the tradeoffs between calculation accuracy and power consumption for edge systems.
