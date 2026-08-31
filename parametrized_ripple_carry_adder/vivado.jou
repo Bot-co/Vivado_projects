@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Apr 12 22:06:28 2026
+# Process ID         : 19100
+# Current directory  : C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20864 C:\Users\prave\Vivado_projects\parametrized_ripple_carry_adder\project_1.xpr
+# Log file           : C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder/vivado.log
+# Journal file       : C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder\vivado.jou
+# Running On         : Goblet-of-File
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency      : 2795 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16407 MB
+# Swap memory        : 5637 MB
+# Total Virtual      : 22044 MB
+# Available Virtual  : 6000 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type functional
+source tb_ripple_carry_adder_16bit.tcl
+restart
+open_saif rca.saif
+log_saif [get_objects -r /tb_ripple_carry_adder_16bit/*]
+run all
+close_saif
+set_load 5 [all_outputs]
+read_saif {C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder/project_1.sim/sim_1/impl/func/xsim/rca.saif}
+report_power -name {power_1}
+report_power -file exact_power_report.txt
+get_property DYNAMIC_POWER [current_design]
+update_compile_order -fileset sim_1
+launch_simulation
+source ripple_carry_adder.tcl
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source tb_universal_adder.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-implementation -type functional
+close_sim
+launch_simulation -mode post-implementation -type functional
+source tb_universal_adder.tcl
+restart
+open_saif switch.saif
+log_saif [get_objects -r /tb_universal_adder/dut/*]
+run all
+close_saif
+read_saif {C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder/project_1.sim/sim_1/impl/func/xsim/switch.saif}
+report_power -name {power_1}
+report_timing -from [all_inputs] -to [all_outputs] -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_1
+close_sim
+close_project
+open_project C:/Users/prave/Vivado_projects/Carry_lookahead_adder_16bit/Carry_lookahead_adder_16bit.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/prave/Vivado_projects/Carry_lookahead_adder_16bit/tb_cla16bit_behav.wcfg
+source tb_universal_adder.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/prave/Vivado_projects/Carry_lookahead_adder_16bit/tb_cla16bit_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/prave/Vivado_projects/Carry_lookahead_adder_16bit/tb_cla16bit_behav.wcfg
+close_sim
+launch_simulation
+source tb_universal_adder.tcl
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_simulation -mode post-implementation -type functional
+close_sim
+launch_simulation -mode post-implementation -type functional
+source tb_universal_adder.tcl
+restart
+open_saif cla.saif
+log_saif [get_objects -r /tb_universal_adder/dut/*]
+run all
+close_saif
+read_saif {C:/Users/prave/Vivado_projects/Carry_lookahead_adder_16bit/Carry_lookahead_adder_16bit.sim/sim_1/impl/func/xsim/cla.saif}
+report_power -name {power_1}
+report_timing -from [all_inputs] -to [all_outputs] -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_1
+close_sim
+close_project
+open_project C:/Users/prave/Vivado_projects/Carry_select_adder_16bit/Carry_select_adder_16bit.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/prave/Vivado_projects/Carry_select_adder_16bit/tb_carry_select_adder_16bit_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/prave/Vivado_projects/Carry_select_adder_16bit/tb_carry_select_adder_16bit_behav.wcfg
+launch_simulation
+source tb_universal_adder.tcl
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_sim
+launch_simulation -mode post-implementation -type functional
+source tb_universal_adder.tcl
+restart
+open_saif csa.saif
+log_saif [get_objects -r /tb_universal_adder/dut/*]
+run all
+close_saif
+read_saif {C:/Users/prave/Vivado_projects/Carry_select_adder_16bit/Carry_select_adder_16bit.sim/sim_1/impl/func/xsim/csa.saif}
+report_power -name {power_1}
+report_timing -from [all_inputs] -to [all_outputs] -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_1
+get_property DYNAMIC_POWER [current_design]
+close_sim
+launch_simulation -mode post-implementation -type functional
+source tb_universal_adder.tcl
+close_sim
+close_project
+open_project C:/Users/prave/Vivado_projects/Conditional_sum_adder_16bit/Conditional_sum_adder_16bit.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/prave/Vivado_projects/Conditional_sum_adder_16bit/tb_csa16bit_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/prave/Vivado_projects/Conditional_sum_adder_16bit/tb_csa16bit_behav.wcfg
+launch_simulation
+source tb_universal_adder.tcl
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_sim
+launch_simulation -mode post-implementation -type functional
+source tb_universal_adder.tcl
+open_saif switching.saif
+log_saif [get_objects -r /tb_universal_adder/dut/8]
+log_saif [get_objects -r /tb_universal_adder/dut/*]
+close_saif
+restart
+open_saif power.saif
+log_saif [get_objects -r /tb_universal_adder/dut/*]
+run all
+close_saif
+read_saif {C:/Users/prave/Vivado_projects/Conditional_sum_adder_16bit/Conditional_sum_adder_16bit.sim/sim_1/impl/func/xsim/power.saif}
+report_power -name {power_1}
+report_timing -from [all_inputs] -to [all_outputs] -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_1
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+close_sim

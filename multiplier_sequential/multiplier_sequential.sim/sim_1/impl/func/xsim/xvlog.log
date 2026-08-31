@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/prave/Vivado_projects/multiplier_sequential/multiplier_sequential.sim/sim_1/impl/func/xsim/tb_multiplier_seq_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_seq
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/prave/Vivado_projects/multiplier_sequential/multiplier_sequential.srcs/sim_1/new/tb_multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_multiplier_seq

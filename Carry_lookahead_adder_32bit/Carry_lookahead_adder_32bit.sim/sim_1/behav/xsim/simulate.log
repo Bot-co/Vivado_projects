@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Time | A        + B        + Cin | Sum      | Cout
+------------------------------------------------------
+                   0 | xxxxxxxx + xxxxxxxx +  x  | xxxxxxxx |  x
+               10000 | 00000005 + 0000000a +  0  | 0000000f |  0
+               20000 | 00000010 + 00000020 +  1  | 00000031 |  0
+               30000 | 0000000f + 00000001 +  0  | 00000010 |  0
+               40000 | ffffffff + 00000000 +  1  | 00000000 |  1
+               50000 | ffffffff + 00000001 +  0  | 00000000 |  1
+               60000 | 12345678 + 87654321 +  0  | 99999999 |  0
+               70000 | ffffffff + ffffffff +  1  | ffffffff |  1
+Simulation complete.
+$finish called at time : 80 ns : File "C:/Users/prave/Vivado_projects/Carry_lookahead_adder_32bit/Carry_lookahead_adder_32bit.srcs/sim_1/new/tb_cla32bit.v" Line 83

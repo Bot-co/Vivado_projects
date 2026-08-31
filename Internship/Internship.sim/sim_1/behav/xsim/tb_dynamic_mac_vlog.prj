@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"../../../../Internship.srcs/sources_1/new/approx_loa.v" \
+"../../../../Internship.srcs/sources_1/new/conditional_16bit.v" \
+"../../../../Internship.srcs/sources_1/new/conditional_4bit.v" \
+"../../../../Internship.srcs/sources_1/new/dynamic_mac.v" \
+"../../../../Internship.srcs/sim_1/new/tb_dynamic.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

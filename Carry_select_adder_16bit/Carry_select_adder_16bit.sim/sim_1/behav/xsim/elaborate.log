@@ -1,0 +1,17 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_universal_adder_behav xil_defaultlib.tb_universal_adder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'carry_select_adder_16bit' does not have a parameter named WIDTH [C:/Users/prave/Vivado_projects/Carry_select_adder_16bit/Carry_select_adder_16bit.srcs/sim_1/new/tb_carryselectadder_16bit.v:22]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.block(width=4)
+Compiling module xil_defaultlib.carry_select_adder_16bit
+Compiling module xil_defaultlib.tb_universal_adder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_universal_adder_behav

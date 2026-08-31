@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/prave/Vivado_projects/StackelMAC/StackelMAC.sim/sim_1/synth/timing/xsim/tb_top_module_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DSP48E2_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-311] analyzing module mac__parameterized0
+INFO: [VRFC 10-311] analyzing module mac__parameterized1
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/prave/Vivado_projects/StackelMAC/StackelMAC.srcs/sim_1/new/tb_topmodule.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_module

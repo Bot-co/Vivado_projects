@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"tb_universal_adder_func_impl.v" \
+"../../../../../Carry_lookahead_adder_16bit.srcs/sim_1/new/tb_cla16bit.v" \
+
+# Do not sort compile order
+nosort

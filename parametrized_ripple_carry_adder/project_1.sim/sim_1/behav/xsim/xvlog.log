@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder/project_1.srcs/sources_1/new/parametrized_ripple_carry_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_carry_adder
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/prave/Vivado_projects/parametrized_ripple_carry_adder/project_1.srcs/sim_1/new/tb_ripple_carry_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_universal_adder

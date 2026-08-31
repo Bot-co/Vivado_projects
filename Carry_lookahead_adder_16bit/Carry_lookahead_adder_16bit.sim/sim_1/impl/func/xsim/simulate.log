@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+MATH ERROR:     0 +     0 + 0 resulted in      x (Expected      0)
+MATH ERROR:     0 +     0 + 0 resulted in      x (Expected      0)
+Stress test complete. Export your .saif file now!
+$finish called at time : 100095 ns : File "C:/Users/prave/Vivado_projects/Carry_lookahead_adder_16bit/Carry_lookahead_adder_16bit.srcs/sim_1/new/tb_cla16bit.v" Line 60

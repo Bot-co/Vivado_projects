@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Starting Phase 1: Exact Math Execution
+Starting Phase 2: Power Gated Idle State
+Starting Phase 3: Approximate Math Execution
+Simulation Complete.
+$finish called at time : 11320 ns : File "C:/Users/prave/Vivado_projects/Intern_1/Intern_1.srcs/sim_1/new/tb_top_module.v" Line 103
+Starting Phase 1: Exact Math Execution
+Starting Phase 2: Power Gated Idle State
+Starting Phase 3: Approximate Math Execution
+INFO: xsimkernel Simulation Memory Usage: 27944 KB (Peak: 27944 KB), Simulation CPU Usage: 27671 ms
