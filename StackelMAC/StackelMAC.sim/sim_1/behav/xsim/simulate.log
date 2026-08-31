@@ -1,9 +1,0 @@
-Time resolution is 1 ps
-Starting Phase 1: Exact Math
-Starting Phase 2: Power Gated Idle
-Starting Phase 3: Approximate Math
-$finish called at time : 15190 ns : File "C:/Users/prave/Vivado_projects/StackelMAC/StackelMAC.srcs/sim_1/new/tb_topmodule.v" Line 105
-Starting Phase 1: Exact Math
-Starting Phase 2: Power Gated Idle
-Starting Phase 3: Approximate Math
-$finish called at time : 15190 ns : File "C:/Users/prave/Vivado_projects/StackelMAC/StackelMAC.srcs/sim_1/new/tb_topmodule.v" Line 105
