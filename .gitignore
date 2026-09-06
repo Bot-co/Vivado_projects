@@ -1,39 +1,24 @@
-# Vivado project files
+# Vivado generated files/folders
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Vivado logs and journals
 *.jou
 *.log
 *.str
+
+# Vivado generated files
 *.wdb
 *.pb
-
-# Vivado generated directories
-.cache/
-.hw/
-.ip_user_files/
-.sim/
-.gen/
-.runs/
-.xpr~
-
-# Block design generated files
-*.bd
-*.bd.bak
-
-# Generated output products
 *.dcp
 *.bit
 *.bin
 *.ltx
 
-# Generated simulation files
-*.vcd
-*.wdb
-
 # Temporary files
 *.tmp
 *.bak
 *.swp
-*.swo
-
-# Operating system files
-.DS_Store
-Thumbs.db
